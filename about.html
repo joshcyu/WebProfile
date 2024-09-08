@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="js-body">
+  <header class="js-header">
+    <section class="js-section">
+      <div class="logo">
+        <a><img src="images/7cc5d7a4-d79f-4d6e-afc5-ce43700915c2.jfif"/></a>
+      </div>
+      <div class="js-dark-container">
+        <button class="darkMode js-dark" onclick="
+          firstButton();
+          "></button>
+      </div>
+    </section>
+    <nav>
+      <div>
+        <ul>
+          <li><a class="js-a"  href="index.html">Home</a></li>
+          <li><a class="js-b aboutSec" href="">About</a></li>
+          <li><a class="js-c" href="education.html">Education</a></li>
+          <li><a class="js-d" href="projects.html">Project/s</a></li>
+          <li><a class="js-e" href="certification.html">Certification</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+  </header>
+  <div class="partition js-partition"></div>
+  <main>
+    <div>
+      <div class="mainButtonContainer ">
+          <a class="js-fb" href="https://www.facebook.com/joshua.fermin03" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a class="js-ig" href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="contentContainer1">
+          <div class="hidden">
+            <p>I am a 23 year-old male Electronics Engineering Graduate. My hobbies includes creating portraits, playing musical instruments, playing video games, and PC troubleshooting.</p>
+          </div>
+          <div class="myImageContainer1 js-pic hidden" >
+            <img src="images/tech.jpg"/>
+          </div>
+        </div>
+        <div class="contentContainer2">
+          <div class="hidden">
+            <p>I presently reside at Libid, Binangonan Rizal. This is the location where I spent most of my life as I grow up in this small but beautiful municipality.</p>
+          </div>
+          <div class="myImageContainer2 hidden">
+            <img src="images/binangonan.jpg"/>
+          </div>
+        </div>
+        <div class="mySkills">
+          <div class="skillsNav hidden">
+            <button class="js-a js-view changeColor" onclick="
+              displaySkills();
+              ">View Skills <i class="fa-solid fa-gear"></i></button>
+            <button class="js-view2 js-b changeColor" onclick="
+              displaySkills();
+            "><i class="fa-solid fa-eye"></i></button>
+          </div>
+          <div class="skills showSkill newskill hidden">
+            <ul>
+              <li>Basic knowledge in microcontrollers, microprocessors, and telecommunications equipment</li>
+              <li> Basic background in programming languages such as Python and C++(Arduino IDE), with basic experience
+                in circuit design and PCB layout</li>
+                <li>Familiar with test and measurement equipment and networking concepts.</li>
+                <li> Strong communication skills, including the ability to explain technical information to non-technical
+                  stakeholders</li>
+                <li> Flexible and adaptable, with the ability to work effectively in a fast-paced environment</li>
+                <li>Familiarity with Relational Database Management System (MySQL).</li>
+                <li>Basic web developing capability (HTML, CSS, JavaScript),</li>
+                <li>Familiarity with Agile and Waterfall SDLC methodologies.</li>
+                <li>Basic software testing and debugging skills.</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    
+  </main>
+
+  <footer class="js-footer">
+    <p>About Me</p>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+</html>

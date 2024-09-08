@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="js-body">
+  <header class="js-header">
+    <section class="js-section">
+      <div class="logo">
+        <a><img src="images/7cc5d7a4-d79f-4d6e-afc5-ce43700915c2.jfif"/></a>
+      </div>
+      <div class="js-dark-container">
+        <button class="darkMode js-dark" onclick="
+          firstButton();
+          "></button>
+      </div>
+    </section>
+    <nav>
+      <div>
+        <ul>
+          <li><a class="js-a"  href="index.html">Home</a></li>
+          <li><a class="js-b" href="about.html">About</a></li>
+          <li><a class="js-c" href="education.html">Education</a></li>
+          <li><a class="js-d projectSec" href="">Project/s</a></li>
+          <li><a class="js-e" href="certification.html">Certification</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="partition js-partition"></div>
+  <main class="projectMain">
+    <div>
+      <div class="mainProjectContainer hidden">
+          <p class="js-fb js-ig" id="projectHeader" >My Projects</p>
+      </div>
+      <div class="firstProject hidden" onclick="
+      displayProject();
+      ">
+        <button class="js-dark hidden js-show-button showProjectColor">Thesis Capstone (Video and Website Link)</button>
+        <button class="showProjectColor"><i class="fa-solid fa-eye"></i></button>
+      </div>
+      <div class="firstProjectContent removeContainer hidden js-project-container1">
+        <div>
+          <h3>Web-Based Passenger Tracker and Monitoring RFID-Enabled Card System</h3>
+        </div>
+        <div class="projectDescription">
+          <p>The project's goal is to provide a system that will help the Islanders boarding process by preventing boat overloading, cashless fare transaction, and reduction of long line by manually logging or filling the log book at the port entrance. The project was made to serve as a preventive measure and avoid the past incident that happened at Binangonan Rizal, it is dedicated to enhance passenger safety by tracking their boarding and arrival time and date at each port.</p>
+          <p> <br></p>
+          <p>Web Access Credentials:
+            User Name: 11194371
+            Password: 60-dayfreetrial <br>
+            Web Admin Login:
+            User: admin@gmail.com
+            Password: 123</p>
+        </div>
+        <div class="videoContainer hidden">
+          <video width="800px" 
+          height="600px" 
+          controls="controls">
+            <source src="video/video.mp4" type="video/mp4" />
+          </video>
+          <a href="http://joshayu-001-site1.ltempurl.com/login.php" target="_blank" class="webLink">View Website Here <i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+      <div class="firstProject hidden" onclick="
+      displayProject1();
+      ">
+        <button class="js-show-button1 showProjectColor">Development Documentation</button>
+        <button class="showProjectColor"><i class="fa-solid fa-eye"></i></button>
+      </div>
+      <div class="documentationContainer removeContainer hidden js-project-container2">
+        <div>
+          <p>The hardware of the system consist of microcontroller(ESP8266), relay switches, RFID Module, and components for powering the device such as battery and solar panel. The website was developed using PHP, HTML, JavaScript, and CSS, along with the RDBMS MySQL.</p>
+        </div>
+        <div class="imageprojContainer hidden">
+          <img src="images/p1.jpg"/>
+          <img src="images/p2.jpg"/>
+        </div>
+        <div class="imageprojContainer hidden">
+          <img src="images/p3.jpg"/>
+          <img src="images/p4.jpg"/>
+        </div>
+      </div>
+
+    <div class="js-pic hidden" >
+
+    </div>
+ 
+  </main>
+  <footer class="js-footer">
+    <p>Projects</p>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+</html>
