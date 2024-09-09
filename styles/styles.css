@@ -348,6 +348,7 @@ footer {
 }
 .articleContainer {
   width: 80%;
+
 }
 .articleContainer p {
   text-align: justify;
@@ -423,7 +424,6 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
   margin: 24px 50px;
   margin-bottom: 0px;
   background:transparent;
@@ -659,7 +659,7 @@ video {
     background-color: rgb(58, 58, 97);;
     border-radius: 12px;
   }
-  .homeSec, .aboutSec, .educSec,. .projectSec {
+  .homeSec, .aboutSec, .educSec, .projectSec {
     font-weight: bold;
     border-bottom: 2px solid orange;
     padding: 7px;
@@ -667,7 +667,7 @@ video {
     border-radius: 12px;
   }
   .myImage {
-    width: 150%;
+    width: 100px;
     height: auto;
     padding: 0px 0px;
     text-align: center;
@@ -675,13 +675,15 @@ video {
     border-radius: 24px;
   }
   .myImageContainer {
+
     background-color: rgb(53, 53, 91);
     width:300%;
     height: 400%;
     padding: 0px 0px;
     padding-right: 30px;
     border-radius: 24px;
-    margin-right: 24px;
+    margin-right: 100px;
+    margin-left: 0px;
     align-items: center;
     justify-content: center;
     background-color: orange;
@@ -692,26 +694,31 @@ video {
     display: flex;
   }
   h2{
-    font-size: 24px;
+    font-size: 12px;
     padding: 12px;
   }
   h1 {
     font-size: 30px;
     padding: 0px 12px;
   }
-  article div p {
+  .indexArticle div p {
     font-size: 12px;
-    text-align: justify;
+    text-align: left;
     padding-bottom: 12px;
     padding-right: 12px;
     padding-left: 12px;
+    margin: 0px;
   }
   article {
     display: flex;
+    padding-right: 0px;
+    background:transparent;
+
   }
   .mainButtonContainer {
-    margin: 24px;
-    justify-content: center;
+    margin: 8px;
+    justify-content: flex-start;
+    font-size: 12px;
   }
   .js-ig, .js-fb {
     gap: 14px;
@@ -724,6 +731,7 @@ video {
     color:white;
     cursor: pointer;
   }
+  
   footer {
     display: flex;
     align-items: center;
@@ -745,4 +753,272 @@ video {
     color: black;
     border-color: black;
   }
+  .contentContainer1, .contentContainer2  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    animation: fadeOut 2s forwards;
+    animation-timeline: scroll();
+    transition: 0.2s linear;
+  }
+  .contentContainer1 img, .contentContainer2 img{
+    width: 80%;
+    border-radius: 24px ;
+    margin: 0px 0px;
+    height: 100;
+    margin-left: 24px;
+    animation: fadeOut 2s forwards;
+    animation-timeline: scroll();
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 1s linear;
+  }
+  .articleContainer {
+    width: 80%;
+    padding-right: 0px;
+    margin-right: 0px;
+  
+  }
+  .articleContainer p {
+    text-align: justify;
+  }
+  .myImageContainer1, .myImageContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0px;
+    margin-left: 24px;
+    background:transparent;
+    width: 100%;
+    height: auto;
+    margin-right: 50px;
+  }
+  .indexArticle {
+    margin:0px;
+    padding:0px;
+  }
+  .contentContainer1 p, .contentContainer2 p{
+    font-size: 16px;
+    margin: 0px 12px;
+    text-align: justify;
+    animation: fadeOut 2s forwards;
+    animation-timeline: scroll();
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 
+    1px 1px 1px rgba(0, 0, 0, 0.6);
+    transition: 1s linear;
+  }
+  .mySkills {
+    margin: 0px;
+    padding: 0px;
+  }
+  .skillsNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-top: 24px;
+    background:transparent;
+    border-bottom: 1px solid black;
+    border-radius: 30px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  .skills ul {
+    padding: 0px 70px;
+    transition: 1s linear;
+    
+  }
+  .skills li {
+    margin: 0px 0px;
+    transition: 1s linear;
+    font-size: 12px;
+  }
+  .skills {
+    transition: 1s linear;
+    background: transparent;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 24px;
+    margin-top: 0px 30px;
+    padding: 12px 0px;
+  }
+  .educContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 24px 0px;
+    background: transparent;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  
+  .img1, .img2, .img3, .img4 {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: all ease-in-out 0.5s;
+  }
+  .img1:hover, .img2:hover,.img3:hover,.img4:hover {
+    width: 120%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .img1 p, .img2 p, .img3 p, .img4 p {
+    color: beige;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .img1 :first-child, .img2 :first-child, .img3 :first-child, .img4 :first-child {
+    font-size: 24px;
+    margin: 20px;
+    font-weight: bold;
+  }
+  .mainEducContainer {
+    padding: 0px;
+    margin: 10px;
+  }
+  #educHeader {
+    font-size:24px;
+    text-align: center;
+    padding: 24px;
+  }
+  .mainProjectContainer {
+   padding: 0px;
+  }
+  #projectHeader {
+    border: none;
+    margin: 0px;
+    width: 200px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 24px;
+    padding: 24px 0px;
+  }
+  .projectMain {
+    margin: 0px 0px;
+    padding: 24px;
+  }
+  .firstProject {
+    margin: 24px 0px;
+    margin-bottom: 0px;
+  }
+  .firstProject button{
+    font-size: 12px;
+  }
+  .firstProjectContent {
+    display: block;
+    margin: 0px 0em;
+    background:transparent;
+    padding: 4px;
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  h3 {
+    text-align: left;
+    padding: 12px;
+    font-size: 12px
+  }
+  .firstProjectContent p {
+    font-size: 12px;
+    text-align: justify;
+    margin: 0px 34px;
+  }
+  .projectDescription {
+    padding: 14px 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .projectDescription :last-child {
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .projectVideo {
+    border-radius: 12px;
+    width: 80%;
+    height: auto;
+    padding: 0px;
+    padding-bottom: 23px;
+    align-self: center;
+  }
+  .videoContainer {
+    display: flex;
+    flex-direction: column;
+    background:transparent;
+    align-items: center;
+  }
+  .videoContainer a {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    text-decoration: overline;
+    color: orange;
+  }
+
+  .documentationContainer img {
+    width: 30%;
+    height: auto;
+    padding: 0px 0px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: grey;
+  }
+  .documentationContainer {
+    margin: 0px 0px;
+  }
+  .imageprojContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 12px 12px;
+  }
+  .documentationContainer p {
+    padding-top: 24px;
+    margin-left: 24px;
+    font-size: 12px;
+  }
+  .documentationContainer {
+    display:  block;
+  }
+  .removeContainer {
+    display: none;
+  }
+  .certSection h4 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .certHead {
+    text-align: left;
+  }
+  #webCertDescription {
+    color: rgb(191, 142, 51);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px;
+    width: 80%;
+    border: none;
+  }
+  
 }
