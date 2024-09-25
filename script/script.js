@@ -29,6 +29,31 @@ function displayProject() {
   }
 }
 
+function displayAnswer1() {
+  const showElement = document.querySelector('.js-show-button');
+  const projectCon = document.querySelector('.js-project-container1');
+    projectCon.classList.toggle('removeContainer');
+}
+
+function displayAnswer2() {
+  const showElement = document.querySelector('.js-show-button1');
+  const projectCon = document.querySelector('.js-project-container2');
+    projectCon.classList.toggle('removeContainer');
+}
+
+function displayAnswer3() {
+  const showElement = document.querySelector('.js-show-button2');
+  const projectCon = document.querySelector('.js-project-container3');
+    projectCon.classList.toggle('removeContainer');
+}
+
+function displayAnswer4() {
+  const showElement = document.querySelector('.js-show-button3');
+  const projectCon = document.querySelector('.js-project-container4');
+    projectCon.classList.toggle('removeContainer');
+}
+
+
 function displayProject1() {
   const projectCon1 = document.querySelector('.js-project-container2');
   const showElem1 = document.querySelector('.js-show-button1');
